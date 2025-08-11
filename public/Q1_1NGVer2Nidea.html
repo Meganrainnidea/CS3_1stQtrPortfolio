@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+        <script>
+    let age=window.prompt("Enter your age : ", 14)
+    let maxAge = window.prompt("Number of snacks daily : ", 2)
+    //determine how many snacks needed until maxAge year
+    let sure= window.confirm("Sure of your numbers?")
+
+    if (sure) {
+        let totalRequired= (Number(numPerDay) * 365) * (Number(maxAge)- Number(age));
+        //display on browder
+        document.write("You will need " +totalRequired + "to last you until the ripe old age of "+ maxAge);
+        alert (`You will need ${totalRequired} to last you until the ripe old age of ${maxAge}`);
+        console.log ("You will need " + totalRequired + `to last until the ripe old age of ${maxAge}`);
+    
+    }
+    </script>
+    <body>
+    <html> 
