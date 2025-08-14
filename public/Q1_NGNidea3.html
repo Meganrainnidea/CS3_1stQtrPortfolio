@@ -1,0 +1,32 @@
+<DOCTYPE html>
+    <head>
+        </head>
+        <body>
+            <!--comment line-->
+            <h1> Feed me My Snacks</h1>
+            <label> Enter your age
+                <input id="age"/>
+            
+            </label> <br/>
+            <label> Enter your Max age
+                <input id="age"/>
+                </label><br/>
+            <label>
+                Enter number of Snacks
+                <input id="numPerDay"/>
+                </label><br/>
+                <p> Result :
+                    <span id="resultHere"></span>
+                    </p>
+                    <button onclick= "showResult()" >Accept input</button>
+                    <script>
+                        function showResult (){
+                            let age = document.getElementbyId("age").value;
+                            let maxAge= document.getElementbyId ("maxAge").value;
+                            let numPerDay = document.getElementbyId ("numPerDay").value;
+                            let totalRequired= (numPerDay * 365) * (maxAge-age);
+                            document.getElementById ("resultHere").innerHTML = "You will need" + totalRequired + "packs of popcorn to last you until the ripe age of" +maxAge + ".";
+                        }
+                    </script>
+                    </body>
+                </html>
