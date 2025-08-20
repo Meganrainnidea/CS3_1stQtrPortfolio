@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Q1 2nd Graded Exercise submitted by Megan Rain Nidea of 9Magnesium</h2>
+
+    <!-- Input Fields -->
+    <label for="mealPrice">Meal Price:</label>
+    <input type="text" id="mealPrice"><br><br>
+
+    <label for="tip">Tip:</label>
+    <input type="text" id="tip"><br><br>
+
+    <label for="serviceCharge">Service Charge (%):</label>
+    <input type="text" id="serviceCharge"><br><br>
+
+    <button onclick="totalMeal()">Accept Input</button>
+    <p id="output">Total Meal: </p>
+
+    <!-- JavaScript Function -->
+    <script>
+        function totalMeal() {
+            let mp=parseFloat(document.getElementById("mealPrice").value);
+            let tip=parseFloat(document.getElementById("tip").value);
+            let sc=parseFloat(document.getElementById("serviceCharge").value);
+
+            let totalCost = mp + tip + (sc / 100 * mp)
+
+            document.getElementById("output").innerText = "Total Meal: " + totalCost.toFixed(2);
+        }
+    </script>
+
+    <!-- Footer with citations -->
+    <footer>
+        <p>Resources Used:</p>
+        <ul>
+            <li>W3Schools. (n.d.). JavaScript Numbers. Retrieved from https://www.w3schools.com/js/js_numbers.asp</li>
+            <li>W3Schools. (n.d.). JavaScript Functions. Retrieved from https://www.w3schools.com/js/js_functions.asp</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
